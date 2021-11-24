@@ -4,7 +4,7 @@ var router = express.Router();
 
 // Bot Setting
 const TelegramBot = require('node-telegram-bot-api');
-const token = '2109176747:AAHMQMhHZE1ZJoiE0MQn7U9K5Uw-yda__nw';
+const token = '2142219074:AAFxxsxmxvHa6QpuULZNWF6XflgsqiWv-h0';
 const bot = new TelegramBot(token, {polling: true});
 
 
