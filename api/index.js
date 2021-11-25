@@ -68,7 +68,7 @@ router.get('/sensor/:sensor1/:sensor2/:sensor3',(req, res, next) => {
   }
 });
 
-https://bebaskan.herokuapp.com/api/test/cobacoba
+https://bebaskan.herokuapp.com/api/test/percobaan-berhasil
 router.get('/test/:key', function(req, res, next){
     bot.sendMessage(
             global_msg_id, //msg.id
