@@ -10,7 +10,7 @@ const bot = new TelegramBot(token, {polling: true});
 
 let global_msg_id;
 // Main Menu Bot
-bot.onText(/\/Start/, (msg) => {
+bot.onText(/\/start/, (msg) => {
     bot.sendMessage(msg.chat.id, `Welcome, ${msg.chat.first_name}`, {
     "reply_markup": {
       "keyboard":[["/Apa kabar?"],["/Mau apa hari ini?"]]
