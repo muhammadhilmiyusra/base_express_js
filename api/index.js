@@ -47,7 +47,7 @@ router.get('/', (req, res, next) => {
   });
 });
 
-// https://bebaskan.herokuapp.com//api/sensor/123/65/78
+// https://bebaskan.herokuapp.com/api/sensor/123/150/58
 router.get('/sensor/:sensor1/:sensor2/:sensor3', (req, res, next) => {
   try {
       bot.sendMessage(
