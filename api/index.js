@@ -13,24 +13,24 @@ let global_msg_id;
 bot.onText(/\/Start/, (msg) => {
     bot.sendMessage(msg.chat.id, `Welcome, ${msg.chat.first_name}`, {
     "reply_markup": {
-      "keyboard":[["/Assalamualaikum"],["/Bagaimana Kabar Cuaca"]]
+      "keyboard":[["/Apa kabar?"],["/Mau apa hari ini?"]]
       }
     });
 });
 
-bot.onText(/\/Assalamualaikum/, (msg) => {
+bot.onText(/\/Apa kabar?/, (msg) => {
     global_msg_id = msg.chat.id;
     bot.sendMessage(
         global_msg_id,
-        `Waalaikumsalam`
+        `Baik`
         );
 });
 
-bot.onText(/\/Bagaimana Kabar Cuaca/, (msg) => {
+bot.onText(/\/Mau apa hari ini?/, (msg) => {
     global_msg_id = msg.chat.id;
     bot.sendMessage(
         global_msg_id,
-        `Alhamdulillah Cerah.`
+        `Melakukan percobaan forum 12.`
         );
 });
 
