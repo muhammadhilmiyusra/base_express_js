@@ -13,20 +13,20 @@ let global_msg_id;
 bot.onText(/\/Start/, (msg) => {
     bot.sendMessage(msg.chat.id, `Welcome, ${msg.chat.first_name}`, {
     "reply_markup": {
-      "keyboard":[["/Assalamualaikum"],["/Mau apa kita hari ini? kamu hari ini?"]]
+      "keyboard":[["/Halo"],["/Mau apa kita hari ini?"]]
       }
     });
 });
 
-bot.onText(/\/Assalamualaikum/, (msg) => {
+bot.onText(/\/Halo/, (msg) => {
     global_msg_id = msg.chat.id;
     bot.sendMessage(
         global_msg_id,
-        `Wa'alaikumsalam`
+        `Halo juga`
         );
 });
 
-bot.onText(/\/Bagaimana kabar kamu hari ini?/, (msg) => {
+bot.onText(/\/Mau apa kita hari ini?/, (msg) => {
     global_msg_id = msg.chat.id;
     bot.sendMessage(
         global_msg_id,
