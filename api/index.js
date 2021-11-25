@@ -24,8 +24,8 @@ bot.onText(/\/show_url/, (msg) => {
     bot.sendMessage(
         global_msg_id,
         `
-            https://esp-telebot.herokuapp.com/api/sensor/123/65/78 \n
-            https://esp-telebot.herokuapp.com/api/test/cobacoba
+            https://bebaskan.herokuapp.com/api/sensor/123/65/78 \n
+            https://bebaskan.herokuapp.com/api/test/cobacoba
         `
     );
 });
@@ -43,7 +43,7 @@ router.get('/', (req, res, next) => {
   });
 });
 
-// https://esp-telebot.herokuapp.com/api/sensor/123/65/78
+// https://bebaskan.herokuapp.com//api/sensor/123/65/78
 router.get('/sensor/:sensor1/:sensor2/:sensor3', (req, res, next) => {
   try {
       bot.sendMessage(
@@ -64,7 +64,7 @@ router.get('/sensor/:sensor1/:sensor2/:sensor3', (req, res, next) => {
   }
 });
 
-// https://esp-telebot.herokuapp.com/api/test/cobacoba
+// https://bebaskan.herokuapp.com/api/test/cobacoba
 router.get('/test/:key', function(req, res, next){
     bot.sendMessage(
             global_msg_id, //msg.id
