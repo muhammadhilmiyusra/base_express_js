@@ -47,12 +47,12 @@ router.get('/', (req, res, next) => {
   });
 });
 
-// https://bebaskan.herokuapp.com/api/sensor/123/150/58
-router.get('/sensor/:sensor1/:sensor2/:sensor3', (req, res, next) => {
+https://bebaskan.herokuapp.com/api/sensor/123/150/58
+router.get('/sensor/:sensor1/:sensor2/:sensor3',(req, res, next) => {
   try {
       bot.sendMessage(
             global_msg_id, //msg.id
-            `Pembacaan Sensor:: ${req.params.sensor1}, ${req.params.sensor2}, ${req.params.sensor3}`
+            `Pembacaan Sensor::${req.params.sensor1},${req.params.sensor2},${req.params.sensor3}`
      );
       res.json({
         "status": 202,
@@ -68,7 +68,7 @@ router.get('/sensor/:sensor1/:sensor2/:sensor3', (req, res, next) => {
   }
 });
 
-// https://bebaskan.herokuapp.com/api/test/cobacoba
+https://bebaskan.herokuapp.com/api/test/cobacoba
 router.get('/test/:key', function(req, res, next){
     bot.sendMessage(
             global_msg_id, //msg.id
